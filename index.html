@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <h1>obrázek hovna</h1>
+    <p>hovno</p>
+    <button onclick="mojeFunkce()">ukázat</button>
+    <br><br>
+    <div id="dv">
+
+    </div>
+</body>
+
+<script>
+    function mojeFunkce() {
+        let obrazek = '<img src="hovno.jpg"><img>';
+        let tlacitko =
+            '<button onclick="zpet()">zpět</button>';
+        document.getElementById('dv').innerHTML = obrazek + '<br>' + tlacitko;
+    }
+
+    function zpet() {
+        document.getElementById('dv').innerHTML = '';
+    }
+</script>
+
+</html>
